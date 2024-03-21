@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+* {
+    font-family: "Roboto Flex", sans-serif;
+    box-sizing:border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(46, 46, 46);
+}
+
+.calculator {
+    width: 20rem;
+    margin-top: 30px;
+    padding: 50px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+#screen {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 250px;
+    height: 60px;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.row-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    width: 250px;
+    margin: 5px;
+}
+
+.row-buttons input {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    
+}
+
+#bt-zero {
+    width: 115px;
+    border-radius: 30px;
+}
+.bg-orange {
+    background-color: #f4a938;
+    color: #fff;
+}
+.bg-gray {
+    background-color: #545454;
+    color: #fff;
+}
+.bg-lgray {
+    background-color: #a4a4a4;
+    color: black;
+}
