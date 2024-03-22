@@ -10,33 +10,33 @@
     <div class="calculator">
         <input type="text" id="screen" readonly>
         <div class="row-buttons">
-            <input type="button" class="bg-lgray" value="AC">
-            <input type="button" class="bg-lgray" value="+/-">
-            <input type="button" class="bg-lgray" value="%">
-            <input type="button" class="bg-orange" value="÷">
+            <input type="button" class="bg-lgray" value="AC" onclick="erase()">
+            <input type="button" class="bg-lgray" value="+/-" onclick="operate('')">
+            <input type="button" class="bg-lgray" value="%" onclick="operate('%')">
+            <input type="button" class="bg-orange" value="÷" onclick="operate('/')">
         </div>
         <div class="row-buttons">
-            <input type="button" class="bg-gray" value="7">
-            <input type="button" class="bg-gray" value="8">
-            <input type="button" class="bg-gray" value="9">
-            <input type="button" class="bg-orange" value="x">
+            <input type="button" class="bg-gray" value="7" onclick="add('7')">
+            <input type="button" class="bg-gray" value="8" onclick="add('8')">
+            <input type="button" class="bg-gray" value="9" onclick="add('9')">
+            <input type="button" class="bg-orange" value="x" onclick="operate('*')">
         </div>
         <div class="row-buttons">
-            <input type="button" class="bg-gray" value="4">
-            <input type="button" class="bg-gray" value="5">
-            <input type="button" class="bg-gray" value="6">
-            <input type="button" class="bg-orange" value="-">
+            <input type="button" class="bg-gray" value="4" onclick="add('4')">
+            <input type="button" class="bg-gray" value="5" onclick="add('5')">
+            <input type="button" class="bg-gray" value="6" onclick="add('6')">
+            <input type="button" class="bg-orange" value="-" onclick="operate('-')">
         </div>
         <div class="row-buttons">
-            <input type="button" class="bg-gray" value="1">
-            <input type="button" class="bg-gray" value="2">
-            <input type="button" class="bg-gray" value="3">
-            <input type="button" class="bg-orange" value="+">
+            <input type="button" class="bg-gray" value="1" onclick="add('1')">
+            <input type="button" class="bg-gray" value="2" onclick="add('2')">
+            <input type="button" class="bg-gray" value="3" onclick="add('3')">
+            <input type="button" class="bg-orange" value="+" onclick="operate('+')">
         </div>
         <div class="row-buttons">
-            <input type="button" class="bg-gray" id="bt-zero" value="0">
-            <input type="button" class="bg-gray" value=",">
-            <input type="button" class="bg-orange" value="=">
+            <input type="button" class="bg-gray" id="bt-zero" value="0" onclick="add('0')">
+            <input type="button" class="bg-gray" value="," onclick="add('.')">
+            <input type="button" class="bg-orange" value="=" onclick="result()">
         </div>
     </div>
     <script src="script.js"></script>

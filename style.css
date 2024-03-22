@@ -25,10 +25,11 @@ body {
 #screen {
     background-color: black;
     border: none;
+    text-align: right;
     color: white;
     width: 250px;
     height: 60px;
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 30px;
 }
 .row-buttons {
